@@ -111,10 +111,6 @@ A: 卡片本体 `user-select: none` 且不拦截点击；只有刷新按钮、�
 **Q: 窄栏（56px）模式下显示吗？**
 A: 显示。卡片是独立 fixed 定位，不依赖侧边栏槽位，与 cordis-panel/设置按钮无叠加问题（此前的动态插件版本因占 `sidebar.footer.action` 槽位与 shipped 按钮冲突，正式版已改为注入脚本方案彻底规避）。
 
-## 与 dsh-web-ui 全家桶的兼容性
-
-[dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) 的 15 个插件（任务看板、Git 图谱、SSH、宠物、皮肤等）均为新增功能、使用独立 `web-ui-*` 行 ID、不占用 `sidebar.footer.action` 槽位、不调用 `tapIndex`、不注册 `/usage-status.json` 路由——与本插件**零冲突**，可同时安装。
-
 ## License
 
 MIT
