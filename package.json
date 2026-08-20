@@ -1,0 +1,28 @@
+{
+  "name": "dsh-usage-card",
+  "description": "Sidebar status card for DeepSeek Harness Web UI: real-time balance, peak/off-peak hours, and today's Flash/Pro spend. Pure host plugin — no client build, no dynamic-plugin approval, survives restarts.",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afeng-leader/dsh-usage-card.git"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "balance",
+    "usage",
+    "peak-hours",
+    "token-cost"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

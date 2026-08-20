@@ -1,0 +1,6 @@
+# dsh-usage-card bundle patch: adds the sidebar status card host plugin.
+# Applied as a bundle layer (package.json dsh.bundle.patch). The plugin
+# registers /usage-status.json and injects the card script into index.html.
+- insert:
+    - id: usage-card
+      name: '@tssh/dsh-usage-card'
